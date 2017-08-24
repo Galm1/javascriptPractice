@@ -102,8 +102,7 @@ function maxOfThree(x,y,z){
       return y
     } else {
       return z
-    }
-}
+    }}
 
 let x = 1
 let y = 2
@@ -124,8 +123,7 @@ function isVowel(char){
     return 'sometimessss'
   }else {
     return false
-  }
-}
+  }}
 
 console.log(isVowel('y'));
 
@@ -176,7 +174,6 @@ function greaterThan(x,y){
     return true
   }
     return false
-
 }
 
 console.log(greaterThan(2,5));
@@ -191,7 +188,6 @@ console.log(greaterThan(2,5));
 // Then, write and example of using the function.
 function greet(x){
   return 'hello, ' + x;
-
 }
 
 console.log(greet('YO MAMA'));
@@ -295,7 +291,6 @@ let numbers = [1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6];
 1. Return the 4th element in the "numbers" array
 */
 function getFourthNum() {
-  // Your answer here:
   return numbers[3]
 }
 
@@ -304,7 +299,6 @@ function getFourthNum() {
 */
 function smallNums() {
   let smallNums = [];
-  // Your answer here:
   for (var i = 0; i < numbers.length; i++) {
     if (numbers[i] < 10) {
       smallNums.push(numbers[i])
@@ -317,7 +311,6 @@ function smallNums() {
 3. Add 12, 99, and 101 (in that order) to the end of the "numbers" array. Return the "numbers" array.
 */
 function addNums() {
-  // Your answer here:
   {
     numbers.push(12, 99, 101)
   }
@@ -345,7 +338,6 @@ let film = {
 4. Add a property "boxoffice" with a value of 269061 to the "film" object. Return "film".
 */
 function addBoxOffice() {
-  // Your answer here:
   film.boxoffice = 269061;
   return film;
 }
@@ -354,7 +346,6 @@ function addBoxOffice() {
 5. Add the name "Yukiko Shimazaki" to the "actors" array. Return "film";
 */
 function addActor() {
-  // Your answer here:
   film.actors.push('Yukiko Shimazaki');
   return film;
 }
@@ -363,14 +354,8 @@ function addActor() {
 6. Now that you've added a "boxoffice" property, subtract "budget" from "property" and return the difference. This number is the amount lost by the studio in making the film. Return the loss.
 */
 function getLosses() {
-  // Your answer here:
   return film.boxoffice - film.budget
 }
-
-
-
-
-
 
 
 /*
@@ -384,17 +369,11 @@ let letterVals = ["v", "x", "r", "f", "p"];
 
 function interleave() {
   let vals = [];
-  // Your answer here:
   for (var i = 0; i < numberVals.length; i++) {
     vals.push(letterVals[i] + numberVals[i])
   }
   return vals;
-
 }
-
-
-
-
 
 
 /*
@@ -406,7 +385,6 @@ let second = ["think", "stand", "cheese", "break", "numinous", "mouse", "close",
 
 function union() {
   let same = [];
-  // Your answer here:
   for (var i = 0; i < first.length; i++) {
     if(first[i]===second[i]){
       same.push(first[i])
@@ -444,7 +422,6 @@ let pet = {
 };
 
 function getPetName(){
-    // Answer goes here:
     return pet.name;
 }
 
@@ -462,7 +439,6 @@ let human = {
 };
 
 function getHumanName(){
-    // Answer goes here:
     return human.firstname + " " + human.lastname;
 }
 
@@ -475,7 +451,6 @@ Answer: This function should return the string "hill"
 let terrain = [ "plain", "mountain", "hill", "beach", "valley" ];
 
 function getTerrain(){
-    // Answer goes here:
     return terrain[ 2 ];
 }
 
@@ -491,7 +466,6 @@ let child = {
 };
 
 function getChildHobby(){
-    // Answer goes here:
     return child.hobbies[ 1 ];
 }
 
@@ -506,7 +480,6 @@ Answer: This function should return [702, 18, 7128, 2658, 702, 1371, 234]
 let nums = [ 234, 6, 2376, 886, 234, 457, 78 ];
 
 function getDoubledArray(){
-    // Answer goes here:
     for(let i = 0; i < nums.length; i++){
         nums[ i ] *= 3;
     }
@@ -525,7 +498,6 @@ let characters = [ "k", "?", "4", "Fd", "9", "$", "a", "l", ";", "Y", "1", "!"];
 
 function getGibberish(){
     let gibberish = "";
-    // Answer goes here:
     for(let i = 0; i < characters.length; i++){
         gibberish += characters[ i ];
     }
@@ -544,7 +516,6 @@ let hero = {
 };
 
 function addHealthToHero(){
-    // Answer goes here:
     hero.health = "9 hearts";
     return hero;
 }
@@ -560,7 +531,6 @@ Answer: This function should return ["x", 12, "x", 56, 19, "x", "x", "x", 14, 10
 let bigNums = [ 3, 12, 7, 56, 19, 9, 1, 5, 14, 10, 2 ];
 
 function nixLittleNums(){
-    // Answer goes here:
     for( let i = 0; i < bigNums.length; i++ ){
         if( bigNums[ i ] < 10 ){
             bigNums[ i ] = "x";
@@ -584,9 +554,7 @@ function randomWord(){
 
 function getBigWordList(){
     let lotsOfWords = [];
-    // Answer goes here:
     let i = 0;
-
     while( i < 100 ){
         lotsOfWords.push( randomWord() );
         i++;
@@ -606,9 +574,7 @@ let option1 = [ 45, 586, 12, 365, 76, 23, 86, 19, 8, 43654 ];
 let option2 = [ 76, 364, 4, 934, 6, 345, 6789, 123, 675, 12 ];
 
 function getFinalChoice(){
-    // Answer goes here:
     let finalChoice = [];
-
     for( let i = 0; i < option1.length; i++ ){
         if( option1[ i ] > option2[ i ] ){
             finalChoice.push( option1[ i ] );
@@ -645,7 +611,6 @@ Answer: This function should return the number 18406.
 let numberArray = [ 23, 234, 64 , 89, 2, 756, 3, 58, 674, 32, 756, 23, 6 ];
 
 function getBigNumber(){
-    // Your answer goes here:
     let total = [];
     for (let i = 0; i < numberArray.length; i++) {
       numberArray[i] *= i;
@@ -676,7 +641,6 @@ let people = [
 ];
 
 function checkPeopleStatus(){
-    // Your answer goes here:
     for (var i = 0; i < people.length; i++) {
       if (people[i].age < 18){
         people[i].status = 'minor'
@@ -715,14 +679,12 @@ Answer: This function should output the string "*\n**\n***\n****\n*****\n"
 */
 
 function printTriangle(){
-    // Your answer goes here:
     let row = ''
     let triangle = ''
 
     for (var i = 0; i < 5; i++) {
       row += '*'
       triangle += row + '/n'
-
     }
     return triangle;
 }
@@ -780,8 +742,6 @@ function transpose(){
 
 
 function handValue(hand) {
-
-
   let total = 0;
   for (let i = 0; i < hand.length; i++) {
     let card = hand[i];
@@ -791,7 +751,6 @@ function handValue(hand) {
       total += parseInt(card, 10);
     }
   }
-
   for (let i = 0; i < hand.length; i++) {
     if (hand[i] === 'A') {
       if (total > 10) {
@@ -800,8 +759,6 @@ function handValue(hand) {
         total += 11;
       }
     }
-
-
   }
   console.log(total);
   return total;
