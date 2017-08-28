@@ -87,14 +87,14 @@ console.log(power(4,3));
 // console.log(r('hello'));
 
 
-// function reverse(str){
-//   console.log(str);
-//   if(str == ''){
-//     return str;
-//   }
-//   str = reverse(str.slice(1))+str.charAt(0);
-// }
-// reverse('pig');
+function reverse(str){
+  console.log(str);
+  if(str == ''){
+    return str;
+  }
+  return reverse(str.slice(1))+str.charAt(0);
+}
+console.log(reverse('pig'));
 
 
 // console.log('p'.slice(1))
