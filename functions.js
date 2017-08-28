@@ -1,13 +1,19 @@
-var landscape = function() {
-  var result = "";
-  var flat = function(size) {
-    for (var count = 0; count < size; count++)
+let landscape = function() {
+  let result = "";
+  let flat = function(size) {
+    for (let i = 0; i < size; i++)
       result += "_";
   };
-  var mountain = function(size) {
+  let mountain = function(size) {
     result += "/";
-    for (var count = 0; count < size; count++)
+    for (let i = 0; i < size; i++)
       result += "'";
+    result += "\\";
+  };
+  let jaggedMountain = function(size) {
+    result += "/";
+    for (let i = 0; i < size; i++)
+      result += "^";
     result += "\\";
   };
 
@@ -16,6 +22,7 @@ var landscape = function() {
   flat(6);
   mountain(1);
   flat(1);
+  jaggedMountain(4);
   return result;
 };
 
@@ -24,3 +31,85 @@ console.log(landscape());
 
 
 ////////////////////////////////////////////////////////////////
+
+
+//
+// let launchMissiles = function(value) {
+//   missileSystem.launch("now");
+// };
+// if (safeMode)
+//   launchMissiles = function(value) {
+//     /* do nothing */
+//   }; else {
+//     launchMissiles = function(value) {/* launch missle */};
+
+//////////////////////////////////////////////////////////////////
+
+
+// function power(base, exponent) {
+//   if (exponent == undefined)
+//   exponent = 2;
+//   let result = 1;
+//   for (let i = 0; i < exponent; i++)
+//     result *= base;
+//   return result;
+// }
+// console.log(power(4));
+// /* → 16 */
+// console.log(power(4, 3));
+// /* → 64 */
+
+///////////////////////////////////////////////////////
+
+
+function power(base, exponent) {
+  // if (power() == power(base, !)){
+  //     return;
+  if (exponent == 0){
+    return 1;
+  }else {
+    // console.log(base * power(base, exponent - 1));
+    return base * power(base, --exponent);
+  }
+}
+console.log(power(4,3));
+// → 8
+
+
+// function r(str){
+//   let strL = str.length - 1;
+//   let newStr = '';
+//    for (var i = strL; i >= 0; i--) {
+//      newStr += str.charAt(i)
+//    }
+//    return newStr;
+// }
+// console.log(r('hello'));
+
+
+// function reverse(str){
+//   console.log(str);
+//   if(str == ''){
+//     return str;
+//   }
+//   str = reverse(str.slice(1))+str.charAt(0);
+// }
+// reverse('pig');
+
+
+// console.log('p'.slice(1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///
