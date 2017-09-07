@@ -115,8 +115,36 @@ function getProduct(arr){
   return pArray;
 }
 
-console.log('get the product' + getProduct([1,7,3,4]));
+console.log('get the product ' + getProduct([1,7,3,4]));
 
+
+function fibbonacci(seq){
+  if (seq <= 2){
+    return 1;
+  }
+  let s = 3;
+  let n = 1;
+  let n2 = 1;
+  while (s <= seq) {
+    n += n2;
+    n2 = n - n2;
+    s++
+  }
+  return n;
+}
+
+function fibRecursive(n){
+  if(n===0){
+    return 0
+  }else if(n<=2){
+    return 1;
+  }
+ return fibRecursive(n - 1) + fibRecursive(n - 2);
+}
+
+
+console.log(fibbonacci(9))
+console.log(fibRecursive(7));
 
 
 
