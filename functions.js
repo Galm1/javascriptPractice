@@ -94,10 +94,28 @@ function reverse(str){
   }
   return reverse(str.slice(1))+str.charAt(0);
 }
-console.log(reverse('pig'));
+console.log(reverse('recursion'));
 
 
 // console.log('p'.slice(1))
+
+
+
+function getProduct(arr){
+  let pArray = []
+  for (var i = 0; i < arr.length; i++) {
+    let product = 1;
+    for (var j = 0; j < arr.length; j++) {
+      if(j !== i){
+        product *= arr[j] ;
+      }
+    }
+    pArray.push(product);
+  }
+  return pArray;
+}
+
+console.log('get the product' + getProduct([1,7,3,4]));
 
 
 
