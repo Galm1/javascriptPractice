@@ -1,10 +1,15 @@
-function spam(number){
-  let laugh = "hue";
-    return laugh.repeat(number);
-};
+// function spam(number){
+//   let laugh = "hue";
+//     return laugh.repeat(number);
+// };
+//
+// console.log(spam(5));
 
-console.log(spam(5));
 
-function findOdd(A) {
-  
+function duplicateCount(text){
+
+let splitText = text.split('');
+return splitText;
+
 }
+console.log(duplicateCount("asdf"));
