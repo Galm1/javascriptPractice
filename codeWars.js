@@ -15,5 +15,8 @@
 // console.log(duplicateCount("asdf"));
 
 function repeatStr (n, s) {
-  return '';
+
+  return s.repeat(n);
 }
+
+console.log(repeatStr(3, 'hey'));
