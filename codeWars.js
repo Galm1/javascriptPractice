@@ -6,10 +6,14 @@
 // console.log(spam(5));
 
 
-function duplicateCount(text){
+// function duplicateCount(text){
+//
+// let splitText = text.split('');
+// return splitText;
+//
+// }
+// console.log(duplicateCount("asdf"));
 
-let splitText = text.split('');
-return splitText;
-
+function repeatStr (n, s) {
+  return '';
 }
-console.log(duplicateCount("asdf"));
