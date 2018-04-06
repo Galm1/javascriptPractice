@@ -653,7 +653,6 @@ function checkPeopleStatus(){
     return people
 }
 
-
 /*
 3. Create a string that, when printed to the console, will output a triangle of stars. The triangle should look like this:
 
